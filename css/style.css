@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Playfair+Display:wght@600&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Quicksand:wght@300;500&display=swap');
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -14,7 +35,7 @@
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgb(163, 177, 134);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
@@ -53,17 +74,20 @@ input {
 .btn {
   margin-top: 10px;
   padding: 10px 40px;
-  background-color: black;
+  background-color: rgb(111, 126, 82);
   color: white;
 }
 
 header {
-  background-color: #373738;
+  background-color: #ffffff;
   padding: 15px;
+  font-family: 'Quicksand', sans-serif;
 }
 header ul {
   float: right;
-  color: white;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header li {
   display: inline-block;
@@ -72,28 +96,28 @@ header li {
 header p {
   display: inline-block;
 }
-.heroImg {
-  background-color: #EBEBEB;
-  padding: 100px 15px;
-}
+
 .content {
   max-width: 300px;
   margin: 0 auto;
   padding: 50px;
   background-color: #FFFFFF;
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 button {
-  padding: 15px;
-  background-color: #373738;
+  padding: 10px;
+  background-color: #000000;
   color: white;
   font-size: 15px;
-  border-radius: 4px;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 50px;
 }
 footer {
-  background-color: #373738;
+  background-color: #ffffff;
   padding: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
+  font-family: 'Quicksand', sans-serif;
 }
 footer ul {
   list-style: none;
@@ -105,13 +129,14 @@ footer li {
 }
 .heading {
   text-align: center;
-  padding: 15px 5px;
-  font-size: 30px;
+
+  font-size: 40px;
 }
 /* My UX Skills Section */
 .flexContainer {
   display: flex;
   padding: 60px 30px;
+  font-family: 'Quicksand', sans-serif;
 }
 .flexContainer div {
   width: 33%;
@@ -121,13 +146,15 @@ footer li {
 /* My Work Section */
 .myWork {
   padding: 60px 30px;
-  padding-top: 0;
-  background-color: #EBEBEB;
+  padding-top: 10px;
+  background-color: rgb(149, 163, 119);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
 }
 .workGrid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 350px 350px 350px;
+  grid-template-rows: 350px 350px 0px;
   grid-template-areas:
   "img1 content1"
   "img2 content2"
@@ -136,7 +163,7 @@ footer li {
 }
 .workGrid img {
   width: 100%;
-  max-width: 250px;
+  max-width: 550px;
   margin: 0 auto;
   display: block;
 }
@@ -150,7 +177,7 @@ footer li {
   grid-area: img3;
 }
 .img1, .img2, .img3, .content1, .content2, .content3 {
-  padding: 80px;
+  padding: 70px;
 }
 .content1 {
   grid-area: content1;
@@ -159,5 +186,43 @@ footer li {
   grid-area: content2;
 }
 .content3 {
+  grid-area: content3;
+}
+
+
+.myWork1 {
+  padding: 0px;
+  padding-top: 0px;
+  background-color: rgb(149, 163, 119);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+.workGrid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
+  grid-template-areas:
+  "img1 content1"
+  ;
+}
+.workGrid1 img {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+}
+.imga {
+  grid-area: img1;
+}
+.imga, .imgb, .imgc, .contenta, .contentb, .contentc {
+  padding: 0px;
+}
+.contenta {
+  grid-area: content1;
+}
+.contentb {
+  grid-area: content2;
+}
+.contentc {
   grid-area: content3;
 }
